@@ -178,12 +178,8 @@ const Register = () => {
 
                 <div className="col m-1">
                     <label className="login-field-headings">Phone Number</label>
-
-                    <div className="input-group">
-                        <span className="input-group-text" id="basic-addon1">+92</span>
-                        <input onChange={onChange} type="text" className="form-control login-fields" name='phone'
-                            placeholder="etc. 090078601" />
-                    </div>
+                    <input onChange={onChange} type="text" className="form-control login-fields" name='phone'
+                        placeholder="etc. 090078601" />
                     <span className='text-danger'>{errors.phone}</span>
 
                 </div>
