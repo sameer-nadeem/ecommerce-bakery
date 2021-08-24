@@ -1,17 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-const Home = () => {
+const Intro = () => {
   return (
-    <>
+    <Fragment>
       <section
         id="home"
-        className="align-items-center fullheight bg-img bg-img-fixed"
+        className="my-align-items-center my-fullheight my-bg-img my-bg-img-fixed"
         style={{ backgroundImage: "url('assets/home.jpg')" }}
       >
-        <div className="container">
-          <div className="row">
-            <div className="col-6 col-xs-12">
-              <div className="slogan">
+        <div className="my-container">
+          <div className="my-row">
+            <div className="my-col-6 my-col-xs-12">
+              <div className="my-slogan">
                 <h1>BR BAKERS</h1>
                 <p>
                   BR Bakers is the first bakery in the town that prepares all of
@@ -24,8 +24,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </>
+    </Fragment>
   );
 };
 
-export default Home;
+export default Intro;

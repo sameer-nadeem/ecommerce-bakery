@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as IoIcons from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -8,41 +8,41 @@ const Navbar1 = () => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   return (
-    <>
-      <div className="nav">
-        <div className="menu-wrap">
+    <Fragment>
+      <div className="my-nav">
+        <div className="my-menu-wrap">
           <a href="#home">
-            <div className="logo">BR BAKERS</div>
+            <div className="my-logo">BR BAKERS</div>
           </a>
-          <div className="menu">
+          <div className="my-menu">
             <a href="#home">
-              <div className="menu-item active">Home</div>
+              <div className="my-menu-item active">Home</div>
             </a>
             <a href="#about">
-              <div className="menu-item">About</div>
+              <div className="my-menu-item">About</div>
             </a>
             <a href="#food-menu">
-              <div className="menu-item">Menu</div>
+              <div className="my-menu-item">Menu</div>
             </a>
             <a href="#testimonial">
-              <div className="menu-item">Testimonial</div>
+              <div className="my-menu-item">Testimonial</div>
             </a>
           </div>
-          <div className="right-menu">
-            <div className="cart-btn cart">
+          <div className="my-right-menu">
+            <div className="my-cart-btn cart">
               <i className="bx bx-cart"></i>
             </div>
-            <div className="cart-btn hamburger">
+            <div className="my-cart-btn hamburger">
               <FaIcons.FaBars onClick={showSidebar} />
             </div>
           </div>
         </div>
       </div>
 
-      <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <ul className="nav-menu-items" onClick={showSidebar}>
-          <li className="navbar-toggle">
-            <Link to="#" className="menu-bars">
+      <nav className={sidebar ? "my-nav-menu active" : "my-nav-menu"}>
+        <ul className="my-nav-menu-items" onClick={showSidebar}>
+          <li className="my-navbar-toggle">
+            <Link to="#" className="my-menu-bars">
               <IoIcons.IoCloseSharp />
             </Link>
           </li>
@@ -60,10 +60,10 @@ const Navbar1 = () => {
         </ul>
       </nav>
       <div
-        className={sidebar ? "remaining active" : "remaining"}
+        className={sidebar ? "my-remaining active" : "my-remaining"}
         onClick={showSidebar}
       ></div>
-    </>
+    </Fragment>
   );
 };
 

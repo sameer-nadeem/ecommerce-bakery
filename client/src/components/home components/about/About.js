@@ -1,20 +1,23 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const About = () => {
   return (
-    <>
-      <section id="about" className="fullheight align-items-center about">
-        <div className="container">
-          <div className="row">
-            <div className="col-7 h-xs">
+    <Fragment>
+      <section
+        id="about"
+        className="my-fullheight my-align-items-center my-about"
+      >
+        <div className="my-container">
+          <div className="my-row">
+            <div className="my-col-7 my-h-xs">
               <img
                 src="assets/about.jpg"
                 alt="About Img"
-                className="fullwidth"
+                className="my-fullwidth"
               />
             </div>
-            <div className="col-5 col-xs-12 align-items-center ">
-              <div className="about-slogan">
+            <div className="my-col-5 my-col-xs-12 my-align-items-center ">
+              <div className="my-about-slogan">
                 <h3>We made most delicious food in the town.</h3>
                 <p>
                   BR Bakers is the first bakery in the town that prepares all of
@@ -26,7 +29,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </>
+    </Fragment>
   );
 };
 

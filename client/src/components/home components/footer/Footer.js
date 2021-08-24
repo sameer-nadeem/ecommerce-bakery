@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const Footer = () => {
   return (
-    <>
+    <Fragment>
       <section
-        className="footer bg-img"
+        className="my-footer my-bg-img"
         style={{ backgroundImage: "url('assets/footer.jpg')" }}
       >
-        <div className="container">
-          <div className="row">
-            <div className="col-6 col-xs-12">
+        <div className="my-container">
+          <div className="my-row">
+            <div className="my-col-6 my-col-xs-12">
               <h1>BR Bakers</h1>
               <br />
               <p>
@@ -22,7 +22,7 @@ const Footer = () => {
               <p>Phone: Phone</p>
               <p>Website: Website</p>
             </div>
-            <div className="col-2 col-xs-12">
+            <div className="my-col-2 my-col-xs-12">
               <h1>About Us</h1>
               <br />
               <p>
@@ -38,7 +38,7 @@ const Footer = () => {
                 <a href="">Chefs</a>
               </p>
             </div>
-            <div className="col-4 col-xs-12">
+            <div className="my-col-4 my-col-xs-12">
               <h1>Subscribe & Media</h1>
               <br />
               <p>
@@ -46,7 +46,7 @@ const Footer = () => {
                 its products in desi ghee and butter and its our primary
                 priority to serve hygenic food to our valuable customers.
               </p>
-              <div className="input-group">
+              <div className="my-input-group">
                 <input type="text" placeholder="Enter Your Email" />
                 <button>Subscribe</button>
               </div>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-    </>
+    </Fragment>
   );
 };
 

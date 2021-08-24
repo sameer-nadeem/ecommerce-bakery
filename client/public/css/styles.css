@@ -23,43 +23,43 @@ body {
   overflow-x: hidden;
   background-color: var(--background-color);
 }
-.fullheight {
+.my-fullheight {
   height: 100vh;
 }
-.align-items-center {
+.my-align-items-center {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.bg-img {
+.my-bg-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bg-img-fixed {
+.my-bg-img-fixed {
   background-attachment: fixed;
 }
-.container {
+.my-container {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
 }
-.row {
+.my-row {
   display: flex;
   flex-wrap: wrap;
 }
 section {
   padding: 9rem 0;
 }
-.slogan {
+.my-slogan {
   text-align: left;
 }
-.slogan h1 {
+.my-slogan h1 {
   font-size: 7rem;
   color: var(--primary-color);
 }
-.slogan button {
+.my-slogan button {
   outline: none;
   padding: 1rem 5rem;
   border: 0.125rem solid var(--primary-color);
@@ -70,12 +70,12 @@ section {
   margin: 3rem 0;
   font-weight: 600;
 }
-.slogan button:hover {
+.my-slogan button:hover {
   color: var(--white);
   background-color: var(--primary-color);
   transition: 0.5s ease-in-out;
 }
-.fullwidth {
+.my-fullwidth {
   width: 100%;
 }
 #about img {
@@ -83,7 +83,7 @@ section {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
-.about-slogan {
+.my-about-slogan {
   padding: 4rem;
   background-color: var(--white);
   border-radius: 2rem;
@@ -91,29 +91,45 @@ section {
   transform: translateX(-10rem);
   text-align: left;
 }
-.about-slogan h3 {
+.my-about-slogan h3 {
   font-size: 2rem;
   color: var(--grey);
   margin-bottom: 3rem;
 }
-.food-menu {
+.cart-btn {
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.cart-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 1rem;
+}
+.my-food-menu {
   padding: 4rem;
   background-color: var(--white);
   border-radius: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.food-menu h1 {
+.my-food-menu h1 {
   color: var(--grey);
 }
-.food-menu p {
+.my-food-menu p {
   margin: 2rem 0;
 }
-.food-category {
+.my-food-category {
   display: flex;
   flex: auto;
   flex-wrap: wrap;
 }
-.food-category button {
+.my-food-category button {
   margin: 1rem;
   border: 1px solid var(--primary-color);
   padding: 0.5rem;
@@ -125,39 +141,39 @@ section {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-.food-category button:hover,
-.food-category button.active {
+.my-food-category button:hover,
+.my-food-category button.active {
   color: var(--white);
   background-color: var(--primary-color);
 }
-.food-item-wrap {
+.my-food-item-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 3rem;
 }
-.food-item {
+.my-food-item {
   height: 30rem;
   width: 25%;
   padding: 1rem;
 }
-.item-wrap {
+.my-item-wrap {
   height: 100%;
   transition: 0.4s ease-in-out;
   cursor: pointer;
   border-radius: 2rem;
 }
-.item-wrap:hover {
+.my-item-wrap:hover {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.item-img {
+.my-item-img {
   height: 60%;
   overflow: hidden;
   border-radius: 2rem;
   position: relative;
 }
-.image-holder {
+.my-image-holder {
   position: absolute;
   top: 0;
   left: 0;
@@ -166,39 +182,39 @@ section {
   transition: 0.4s ease-in-out;
   border-radius: 2rem;
 }
-.image-holder:hover {
+.my-image-holder:hover {
   transform: scale(2) rotate(45deg);
 }
-.item-info {
+.my-item-info {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
   align-items: center;
   padding: 0 1rem;
 }
-.item-info h3 {
+.my-item-info h3 {
   color: var(--grey);
 }
-.item-info > div:first-child {
+.my-item-info > div:first-child {
   text-align: left;
 }
-.review-wrap {
+.my-review-wrap {
   padding: 1rem;
   width: 100%;
   background-color: var(--white);
   border-radius: 3rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.review-wrap.active {
+.my-review-wrap.active {
   transform: scale(1.2) !important;
 }
-.review-content {
+.my-review-content {
   border-bottom: 0.125rem solid var(--grey);
   position: relative;
   padding: 3rem;
   text-align: center;
 }
-.review-img {
+.my-review-img {
   position: absolute;
   height: 5rem;
   width: 5rem;
@@ -208,23 +224,23 @@ section {
   left: 50%;
   bottom: -2.5rem;
 }
-.review-info {
+.my-review-info {
   padding: 3rem;
   text-align: center;
 }
-.rating {
+.my-rating {
   margin-top: 2rem;
 }
-.rating i {
+.my-rating i {
   color: gold;
 }
-.footer {
+.my-footer {
   color: var(--white);
 }
-.footer h1 {
+.my-footer h1 {
   color: var(--primary-color);
 }
-.input-group {
+.my-input-group {
   border: 0.125rem solid var(--primary-color);
   padding: 1rem;
   border-radius: 2rem;
@@ -232,14 +248,14 @@ section {
   justify-content: space-between;
   margin-top: 2rem;
 }
-.input-group input {
+.my-input-group input {
   background-color: transparent;
   flex: auto;
   outline: none;
   border: none;
   color: var(--primary-color);
 }
-.input-group button {
+.my-input-group button {
   font-weight: 600;
   cursor: pointer;
   background-color: var(--primary-color);
@@ -249,7 +265,7 @@ section {
   border: none;
   outline: none;
 }
-.back-to-top {
+.my-back-to-top {
   position: fixed;
   bottom: 5rem;
   right: 5rem;
@@ -263,137 +279,140 @@ section {
   z-index: 99;
   display: none;
 }
+.my-back-to-top:hover {
+  color: var(--white);
+}
 [class*="col-"] {
   padding: 1rem;
 }
 
-.col-1 {
+.my-col-1 {
   width: 8.33%;
 }
 
-.col-2 {
+.my-col-2 {
   width: 16.66%;
 }
 
-.col-3 {
+.my-col-3 {
   width: 25%;
 }
 
-.col-4 {
+.my-col-4 {
   width: 33.33%;
 }
 
-.col-5 {
+.my-col-5 {
   width: 41.66%;
 }
 
-.col-6 {
+.my-col-6 {
   width: 50%;
 }
 
-.col-7 {
+.my-col-7 {
   width: 58.33%;
 }
 
-.col-8 {
+.my-col-8 {
   width: 66.66%;
 }
 
-.col-9 {
+.my-col-9 {
   width: 75%;
 }
 
-.col-10 {
+.my-col-10 {
   width: 83.33%;
 }
 
-.col-11 {
+.my-col-11 {
   width: 91.66%;
 }
 
-.col-12 {
+.my-col-12 {
   width: 100%;
 }
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (max-width: 930px) {
-  .slogan h1 {
+  .my-slogan h1 {
     font-size: 5rem;
   }
-  .about {
+  .my-about {
     background-image: url("./assets/about.jpg");
     background-attachment: fixed;
     background-size: cover;
   }
-  .about-slogan {
+  .my-about-slogan {
     transform: none;
   }
-  .col-xs-1 {
+  .my-col-xs-1 {
     width: 8.33%;
   }
 
-  .col-xs-2 {
+  .my-col-xs-2 {
     width: 16.66%;
   }
 
-  .col-xs-3 {
+  .my-col-xs-3 {
     width: 25%;
   }
 
-  .col-xs-4 {
+  .my-col-xs-4 {
     width: 33.33%;
   }
 
-  .col-xs-5 {
+  .my-col-xs-5 {
     width: 41.66%;
   }
 
-  .col-xs-6 {
+  .my-col-xs-6 {
     width: 50%;
   }
 
-  .col-xs-7 {
+  .my-col-xs-7 {
     width: 58.33%;
   }
 
-  .col-xs-8 {
+  .my-col-xs-8 {
     width: 66.66%;
   }
 
-  .col-xs-9 {
+  .my-col-xs-9 {
     width: 75%;
   }
 
-  .col-xs-10 {
+  .my-col-xs-10 {
     width: 83.33%;
   }
 
-  .col-xs-11 {
+  .my-col-xs-11 {
     width: 91.66%;
   }
 
-  .col-xs-12 {
+  .my-col-xs-12 {
     width: 100%;
   }
-  .h-xs {
+  .my-h-xs {
     display: none;
   }
-  .review-wrap.active {
+  .my-review-wrap.active {
     transform: scale(1) !important;
   }
 }
 @media only screen and (max-width: 1150px) and (min-width: 930px) {
-  .food-item {
+  .my-food-item {
     width: 33.33%;
   }
 }
 @media only screen and (max-width: 930px) and (min-width: 600px) {
-  .food-item {
+  .my-food-item {
     width: 50%;
   }
 }
 @media only screen and (max-width: 600px) {
-  .food-item {
+  .my-food-item {
     width: 100%;
   }
 }

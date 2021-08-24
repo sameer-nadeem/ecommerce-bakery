@@ -1,4 +1,4 @@
-.nav {
+.my-nav {
   position: fixed;
   top: 0;
   right: 0;
@@ -7,7 +7,7 @@
   background-color: var(--background-color);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.menu-wrap {
+.my-menu-wrap {
   max-width: 1366px;
   display: flex;
   align-items: center;
@@ -15,17 +15,17 @@
   margin: auto;
   padding: 1rem;
 }
-.logo {
+.my-logo {
   font-size: 2rem;
   font-weight: 800;
   color: var(--primary-color);
 }
-.menu {
+.my-menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu-item {
+.my-menu-item {
   margin: 1rem;
   padding: 0.5rem 1.5rem;
   color: var(--grey);
@@ -33,13 +33,13 @@
   font-weight: 600;
   cursor: pointer;
 }
-.menu-item:hover,
-.menu-item.active {
+.my-menu-item:hover,
+.my-menu-item.active {
   background-color: var(--primary-color);
   color: white;
   border-radius: 1rem;
 }
-.cart-btn {
+.my-cart-btn {
   height: 3rem;
   width: 3rem;
   font-size: 2rem;
@@ -50,16 +50,16 @@
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-.cart-btn:hover {
+.my-cart-btn:hover {
   background-color: var(--primary-color);
   color: white;
   border-radius: 1rem;
 }
-.cart-btn.hamburger {
+.my-cart-btn.hamburger {
   display: none;
 }
 
-.nav-menu {
+.my-nav-menu {
   background-color: var(--background-color);
   width: 30vw;
   height: 100vh;
@@ -71,7 +71,7 @@
   transition: 850ms;
   z-index: 100;
 }
-.remaining {
+.my-remaining {
   position: fixed;
   top: 0;
   left: -100%;
@@ -82,16 +82,16 @@
   transition: 0ms;
   z-index: 100;
 }
-.remaining.active {
+.my-remaining.active {
   left: 30vw;
   transition: 350ms;
 }
-.nav-menu.active {
+.my-nav-menu.active {
   left: 0;
   transition: 350ms;
 }
 
-.nav-text {
+.my-nav-text {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -100,7 +100,7 @@
   height: 60px;
 }
 
-.nav-text a {
+.my-nav-text a {
   width: 95%;
   height: 100%;
   margin: 0.5rem;
@@ -112,17 +112,17 @@
   display: flex;
 }
 
-.nav-text a:hover {
+.my-nav-text a:hover {
   background-color: var(--primary-color);
   color: white;
   border-radius: 1rem;
 }
 
-.nav-menu-items {
+.my-nav-menu-items {
   width: 100%;
 }
 
-.navbar-toggle {
+.my-navbar-toggle {
   background-color: var(--background-color);
   width: 100%;
   height: 80px;
@@ -131,45 +131,45 @@
   align-items: center;
 }
 
-.nav-menu-items span {
+.my-nav-menu-items span {
   margin-left: 16px;
 }
-.menu-bars {
+.my-menu-bars {
   width: 100%;
   margin-left: 75%;
   font-size: 2rem;
   background: none;
 }
-.menu-bars:hover {
+.my-menu-bars:hover {
   color: var(--primary-color);
 }
-.nav-menu-items {
+.my-nav-menu-items {
   width: 100%;
 }
 
 @media only screen and (max-width: 930px) {
-  .nav .menu {
+  .my-nav .my-menu {
     display: none;
   }
-  .cart-btn.cart {
+  .my-cart-btn.cart {
     display: none;
   }
-  .cart-btn.hamburger {
+  .my-cart-btn.hamburger {
     display: flex;
   }
-  .logo {
+  .my-logo {
     margin-left: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  .nav-menu {
+  .my-nav-menu {
     width: 40vw;
   }
-  .remaining {
+  .my-remaining {
     width: 60vw;
   }
-  .remaining.active {
+  .my-remaining.active {
     left: 40vw;
   }
 }
